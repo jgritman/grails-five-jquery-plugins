@@ -1,0 +1,15 @@
+{
+  "name": "Five jQuery Plugins for Your Grails App",
+  "description": "This talk will cover the basics of jQuery (now the default JavaScript framework in Grails 2.0) and will demonstrate how to integrate some popular jQuery plugins into a Grails application quickly.  The plugins covered will be the Validation plugin for forms, dynamic tables with DataTables, trees with dynatree, calendars with FullCalendar, and history management with BBQ.",
+  "sections": [
+    {"section":"intro"},
+    {"section":"jquery"},
+    {"section":"jqueryui"},
+    {"section":"validation"},
+    {"section":"datatables"},
+    {"section":"fullcalendar"},
+    {"section":"dynatree"},
+    {"section":"bbq"},
+    {"section":"end"}
+  ]
+}
