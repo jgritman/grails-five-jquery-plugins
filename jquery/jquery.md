@@ -69,5 +69,34 @@
 		$('#main > div')  // child selctor
 		$('#main form')  // descendant selector 
 
+!SLIDE
+
+# DOM Manipulation #
+
+	@@@ javascript
+
+		$('myDiv').addClass('myClass')
+		$('myDiv').removeClass('myClass')
+
+!SLIDE
+
+# DOM Manipulation #
+
+	@@@ javascript
+		
+		$('myDiv').show()
+		$('myDiv').hide()
+
+!SLIDE
+
+# Event handling #
+
+	@@@ javascript
+
+		$(':button').click(function() {
+			this.attr('disabled', 'disabled');
+		});
+		
+
 
 
