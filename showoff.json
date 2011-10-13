@@ -5,6 +5,7 @@
     {"section":"intro"},
     {"section":"jquery"},
     {"section":"jqueryui"},
+    {"section":"plugin-intro"},
     {"section":"validation"},
     {"section":"datatables"},
     {"section":"fullcalendar"},

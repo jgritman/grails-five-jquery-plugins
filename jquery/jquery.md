@@ -34,7 +34,7 @@
 
 # But seriously... #
 
- jQuery solves many of the traditional problems involved in developing JavaScript intensive web applications
+  * jQuery solves many of the traditional problems involved in developing JavaScript intensive web applications
 
 !SLIDE
 
@@ -46,7 +46,7 @@
 
  * Most popular JavaScript libary in use today
  * Used in 46% of top 10,000 websites
- * Embedded in many platforms (.NET, Grails, etc.)
+ * Embedded in many platforms (.NET, Grails)
 
 
 !SLIDE
@@ -125,11 +125,4 @@
  * g:formRemote
  * g:submitToRemote
 
-!SLIDE
-
-# Plugins #
-
- * Extend functionality of selectors or $ operator
- * Thousands listed on jquery.com
- * Easy to build!
 
