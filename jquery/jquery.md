@@ -97,6 +97,39 @@
 			this.attr('disabled', 'disabled');
 		});
 		
+!SLIDE
+
+# Ajax support - Get data #
+
+	@@@ javascript
+		$.get('test.html', function(data) {
+		  $('.result').html(data.title);
+		});
 
 
+!SLIDE
+
+# Ajax support - load content #
+
+	@@@ javascript
+
+		// result of request will replace 
+		// content of element with id result
+		$('#result').load('test')
+
+!SLIDE 		
+
+# Grails ajax options #
+
+ * g:remoteLink
+ * g:formRemote
+ * g:submitToRemote
+
+!SLIDE
+
+# Plugins #
+
+ * Extend functionality of selectors or $ operator
+ * Thousands listed on jquery.com
+ * Easy to build!
 
