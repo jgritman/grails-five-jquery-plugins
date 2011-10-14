@@ -9,7 +9,7 @@
 
 !SLIDE 
 
-## Let's look at some plugins 
+# Let's look at some plugins 
 
 !SLIDE
 

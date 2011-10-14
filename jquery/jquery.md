@@ -48,6 +48,10 @@
  * Used in 46% of top 10,000 websites
  * Embedded in many platforms (.NET, Grails)
 
+!SLIDE
+
+# So what is jQuery's magic formula? #
+
 
 !SLIDE
 
@@ -124,5 +128,5 @@
  * g:remoteLink
  * g:formRemote
  * g:submitToRemote
-
+ * Might work better than digging into jQuery depending on the task
 

@@ -1,4 +1,7 @@
-!SLIDE center
+!SLIDE 
 
-Questions?
+# Questions? #
 
+!SLIDE
+
+# Thanks! #

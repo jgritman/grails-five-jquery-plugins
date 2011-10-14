@@ -11,6 +11,7 @@
 
  * Validation requires a round trip
  * Messages appear at the top (not user friendly)
+ * Default messages are kind of ugly
 
 !SLIDE
 
@@ -22,4 +23,12 @@
 
 !SLIDE
 
- # Demo #
+# Flexibility #
+
+ * Specify when validation fires - keystroke, unfocus, submit
+ * Fine control over where validtion messages appear
+ * Internationalization support
+
+!SLIDE
+
+# Demo #
