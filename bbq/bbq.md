@@ -9,7 +9,7 @@
 
 # BBQ functionality #
 
- * When the hash value of a U
+ * Event listener for when the URL's hash value changes
  * Uses HTML5 hashchange event or adds this feature for older browsers
 
 !SLIDE
