@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title></title>
+  <title>Five jQuery Plugins for Your Grails App</title>
 
   <meta name="viewport" content="width=device-width"/>
 
@@ -30,6 +30,8 @@
   <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
   <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
 
+  
+    <link rel="stylesheet" href="file/styles.css" type="text/css"/>
   
 
   
@@ -75,7 +77,328 @@
 </div>
 
 <div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="intro/intro/1">
+<h1>Five jQuery plugins for your Grails app</h1></div>
+</div><div class="slide" data-transition="none">
+  <div class="content" ref="intro/intro/2">
+<p>Jason Gritman<br>
+Consultant @ Chariot Solutions<br>
+<a href="mailto:jasongritman@gmail.com">jasongritman@gmail.com</a><br>
+<a href="http://twitter.com/#!/jgritman">@jgritman</a><br>
+<a href="https://github.com/jgritman">https://github.com/jgritman</a></br></br>
+</br>
+</br></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/1">
+<h1>Grails 1.x</h1>
+
+<pre class="sh_xml"><code>
+&lt;g:javascript library="prototype" /&gt;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/2">
+<h1>Grails 2.0</h1>
+
+<pre class="sh_xml"><code>
+&lt;g:javascript library="jquery" /&gt;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/3">
+<h1>some things you may have heard about jQuery...</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="jquery/jquery/4">
+<p><img src="./file/jquery/so-jquery2.png" alt=""/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="jquery/jquery/5">
+<p><img src="./file/jquery/so-jquery1.png" alt=""/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="jquery/jquery/6">
+<p><img src="./file/jquery/so-jquery3.png" alt=""/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/7">
+<h1>But seriously...</h1>
+
+<ul>
+<li>jQuery solves many of the traditional problems involved in developing JavaScript intensive web applications</li>
+</ul>
 </div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/8">
+<h1>jQuery facts</h1>
+
+<p><img src="./file/jquery/chuck_norris.jpg" alt=""/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/9">
+<ul>
+<li>Most popular JavaScript libary in use today</li>
+<li>Used in 46% of top 10,000 websites</li>
+<li>Embedded in many platforms (.NET, Grails)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/10">
+<h1>So what is jQuery's magic formula?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/11">
+<h1>Selectors</h1>
+
+<pre class="sh_javascript"><code>
+    $('#myDiv') // id selector
+    $('.myClass')  // class selctor
+    $('div')  // type selector </code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/12">
+<h1>Selectors</h1>
+
+<pre class="sh_javascript"><code>
+    $(':input') // special selectors
+    $('#main &gt; div')  // child selctor
+    $('#main form')  // descendant selector </code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/13">
+<h1>DOM Manipulation</h1>
+
+<pre class="sh_javascript"><code>
+    $('myDiv').addClass('myClass')
+    $('myDiv').removeClass('myClass')</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/14">
+<h1>DOM Manipulation</h1>
+
+<pre class="sh_javascript"><code>
+    $('myDiv').show()
+    $('myDiv').hide()</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/15">
+<h1>Event handling</h1>
+
+<pre class="sh_javascript"><code>
+    $(':button').click(function() {
+        this.attr('disabled', 'disabled');
+    });</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/16">
+<h1>Ajax support - Get data</h1>
+
+<pre class="sh_javascript"><code>    $.get('test.html', function(data) {
+      $('.result').html(data.title);
+    });</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/17">
+<h1>Ajax support - load content</h1>
+
+<pre class="sh_javascript"><code>
+    // result of request will replace 
+    // content of element with id result
+    $('#result').load('test')</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jquery/jquery/18">
+<h1>Grails ajax options</h1>
+
+<ul>
+<li>g:remoteLink</li>
+<li>g:formRemote</li>
+<li>g:submitToRemote</li>
+<li>Might work better than digging into jQuery depending on the task</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jqueryui/jqueryui/1">
+<h1>jQuery UI</h1>
+
+<ul>
+<li><a href="http://jqueryui.com/">http://jqueryui.com/</a></li>
+<li>Common UI libraries and widgets developed by the JQuery team</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jqueryui/jqueryui/2">
+<h1>jQuery UI interactions</h1>
+
+<ul>
+<li>Drag and drop</li>
+<li>Resize</li>
+<li>Animations</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jqueryui/jqueryui/3">
+<h1>jQuery UI widgets</h1>
+
+<ul>
+<li>Date Picker</li>
+<li>Dialog boxes</li>
+<li>Tabs</li>
+<li>and more...</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="jqueryui/jqueryui/4">
+<h1>Theme builder</h1>
+
+<ul>
+<li><a href="http://jqueryui.com/themeroller/">http://jqueryui.com/themeroller/</a></li>
+<li>Design a custom look and feel for jQuery UI widgets and plugins</li>
+<li>Bookmarkable url so you can tweak and rebuilt later</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="plugin-intro/plugin-into/1">
+<h1>Plugins</h1>
+
+<ul>
+<li>Extend functionality of selectors or $ operator</li>
+<li>Thousands listed on jquery.com</li>
+<li>Easy to build!</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="plugin-intro/plugin-into/2">
+<h1>Let's look at some plugins</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="plugin-intro/plugin-into/3">
+<h1>Some criteria</h1>
+
+<ul>
+<li>Well documented</li>
+<li>Flexible design for many requirements</li>
+<li>Friendly (non-GPL license)</li>
+<li>Widely used</li>
+<li>Actively maintained</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="validation/validation/1">
+<h1>jQuery Validator</h1>
+
+<ul>
+<li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></li>
+<li>Client side validation</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="validation/validation/2">
+<h1>Grails has validation but...</h1>
+
+<ul>
+<li>Validation requires a round trip</li>
+<li>Messages appear at the top (not user friendly)</li>
+<li>Default messages are kind of ugly</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="validation/validation/3">
+<h1>jQuery validator makes validation easy</h1>
+
+<ul>
+<li>Make a selector for your form and then call .validate()</li>
+<li>Add classes with rules (required,email,url, etc)</li>
+<li>Or attach the rules via JavaScript</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="validation/validation/4">
+<h1>Flexibility</h1>
+
+<ul>
+<li>Specify when validation fires - keystroke, unfocus, submit</li>
+<li>Fine control over where validtion messages appear</li>
+<li>Internationalization support</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="validation/validation/5">
+<h1>Demo</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="datatables/datatables/1">
+<h1>DataTables</h1>
+
+<ul>
+<li><a href="http://datatables.net">http://datatables.net/</a></li>
+<li>Rich dynamic table builder</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="datatables/datatables/2">
+<h1>DataTables features</h1>
+
+<ul>
+<li>Wraps html table element with dynamic paging, sorting, searching</li>
+<li>Lots of flexibility with table look and feel</li>
+<li>JQuery UI support</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="datatables/datatables/3">
+<h1>DataTables performance</h1>
+
+<ul>
+<li>Easiest to do client side - load the whole table up front</li>
+<li>But for large datasets has a server paging API</li>
+<li>Lots of loading options available</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="datatables/datatables/4">
+<h1>Table alternatives</h1>
+
+<ul>
+<li>Many other solutions in this sphere</li>
+<li>jqGrid - more complex api</li>
+<li>Ingrid - documentation lacking</li>
+<li>Flexigrid - not as feature rich</li>
+<li>Grid widget planned for jQuery UI 2.1 - looks promising</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="fullcalendar/fullcalendar/1">
+<h1>Full Calendar</h1>
+
+<ul>
+<li><a href="http://arshaw.com/fullcalendar/">http://arshaw.com/fullcalendar/</a></li>
+<li>Dynamic calendars (think Google Calendar)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="fullcalendar/fullcalendar/2">
+<h1>Full Calendar features</h1>
+
+<ul>
+<li>Load event data via JSON/Javascript</li>
+<li>Rich and elegant eventing model (drag &amp; drop, click events)</li>
+<li>Simply mark select a div and call .fullCalendar()</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="fullcalendar/fullcalendar/3">
+<h1>Full Calendar UI</h1>
+
+<ul>
+<li>Month, week and day views</li>
+<li>Fine control over rendering options</li>
+<li>jQuery UI support</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="dynatree/dynatree/1">
+<h1>dynatree</h1>
+
+<ul>
+<li><a href="http://code.google.com/p/dynatree/">http://code.google.com/p/dynatree/</a></li>
+<li>Used for builing rich tree hierarchies</li>
+</ul>
+
+
+<p><img src="./file/dynatree/treebeard.jpg" alt=""/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="dynatree/dynatree/2">
+<h1>dynatree features</h1>
+
+<ul>
+<li>Init through Javascript/JSON or HTML <ul/>
+<li>Supports full loading or lazy load through Ajax</li>
+<li>Support for icons and checkboxes</li>
+<li>Rich eventing model</li>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bbq/bbq/1">
+<h1>BBQ</h1>
+
+<ul>
+<li><a href="http://benalman.com/projects/jquery-bbq-plugin/">http://benalman.com/projects/jquery-bbq-plugin/</a></li>
+<li>Bookmark/history support</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bbq/bbq/2">
+<h1>BBQ functionality</h1>
+
+<ul>
+<li>Event listener for when the URL's hash value changes</li>
+<li>Uses HTML5 hashchange event or adds this feature for older browsers</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bbq/bbq/3">
+<ul>
+<li>Treat the hash the same as a request string</li>
+<li>Ex. #tab=classes&amp;partner=2</li>
+<li>Retrieve individual params with deparam()</li>
+<li>Change or add with pushState()</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="bbq/bbq/4">
+<h1>Warning</h1>
+
+<ul>
+<li>Uses an iframe with IE7 and earlier</li>
+<li>Stuck on 1.3pre release for over a year</li>
+<li>Other alternatives may be a better choice - search on Single Page Applications</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="end/end/1">
+<h1>Questions?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="end/end/2">
+<h1>Thanks!</h1></div>
+</div></div>
 
 </body>
 </html>
